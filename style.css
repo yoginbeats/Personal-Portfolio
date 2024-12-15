@@ -1,6 +1,147 @@
 /* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+/* Default Styles for Desktop */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar .logo a {
+  font-size: 2rem;
+  color: #333;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.media-icons a {
+  margin: 0 0.5rem;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Hide the menu by default */
+  }
+
+  .menu li {
+    margin: 0.5rem 0;
+  }
+
+  .menu-btn {
+    display: block; /* Display the hamburger menu button */
+    cursor: pointer;
+  }
+
+  .menu-btn i {
+    font-size: 2rem;
+  }
+
+  .cancel-btn {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .home-content {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .home-content .text {
+    font-size: 1.2rem;
+  }
+
+  .projects .project-details {
+    flex-direction: column;
+  }
+
+  .projects .slider {
+    width: 100%;
+    margin: 0;
+  }
+
+  .skills .categories {
+    display: block;
+  }
+
+  .categories .category {
+    margin-bottom: 2rem;
+  }
+
+  .contact .text {
+    text-align: center;
+  }
+}
+
+/* Very Small Screens (phones in portrait mode) */
+@media only screen and (max-width: 480px) {
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .menu li {
+    margin: 0.5rem 0;
+  }
+
+  .text-one, .text-two, .text-three, .text-four {
+    font-size: 1.1rem;
+  }
+
+  .about-details .left, .about-details .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-details img {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem 0;
+  }
+}
+
+
 * {
   margin: 0;
   padding: 0;
